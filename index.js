@@ -21,13 +21,7 @@ panel.plugin("wottpal/drafts", {
       template: `
         <kirby-field v-bind="$attrs">
 
-        <kirby-cards v-if="layout == 'cards'">
-            <kirby-card v-for="page in drafts" :key="page.id" v-bind="page" />
-        </kirby-cards>
-
-        <kirby-list v-else>
-            <kirby-list-item v-for="page in drafts" :key="page.id" v-bind="page" />
-        </kirby-list>
+        <kirby-collection :items="drafts" :sortable="false" :layout="layout" />
 
         </kirby-field>
       `
