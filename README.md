@@ -6,6 +6,8 @@
 
 A section which shows all drafted pages from the whole site.
 
+![Kirby Drafts Field](drafts-field.png)
+
 
 ## Usage
 
